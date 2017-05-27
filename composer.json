@@ -1,0 +1,41 @@
+{
+    "name": "rk90/github",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Kerry",
+            "email": "rkerry1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
+        "knplabs/github-api": "^2.0"
+    },
+    "require-dev": {
+        "madewithlove/illuminate-psr-cache-bridge": "^1.0",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.8|^5.0",
+        "php-http/guzzle6-adapter": "^1.0"
+    },
+    "suggest": {
+        "madewithlove/illuminate-psr-cache-bridge": "Allows caching GitHub HTTP requests"
+    },
+    "autoload": {
+        "psr-4": {
+            "ServiceMap\\Github\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ServiceMap\\Tests\\Github\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
